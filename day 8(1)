@@ -1,0 +1,26 @@
+#include <stdio.h>
+struct book{
+    char title[100];
+    char author[100];
+    int id;
+    float price;
+};
+typedef struct book bk;
+
+int main()
+{
+    bk a;
+    printf("enter the book details\n");
+    printf("title:");
+    scanf("%s",a.title);
+    printf("\nauthor:");
+    scanf("%s",a.author);
+    printf("\nbook id:");
+    scanf("%d",&(a.id));
+    printf("\nprice:");
+    scanf("%f",&(a.price));
+    printf("book details are:\n");
+    printf("%s\n%s\n%d\n%f\n",a.title,a.author,a.id,a.price);
+}
+
+
